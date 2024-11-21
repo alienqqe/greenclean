@@ -1,21 +1,17 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
-import { AppDispatch, useAppSelector } from '../redux/store'
-import { useDispatch } from 'react-redux'
 import { auth } from '../firebase'
-import { logOut } from '../redux/features/logIn-slice'
 import { signOut } from 'firebase/auth'
-import Image from 'next/image'
 
 const Navbar = () => {
-  const state = useAppSelector((state) => state.logIn)
-  const dispatch = useDispatch<AppDispatch>()
+  // const state = useAppSelector((state) => state.logIn)
+  // const dispatch = useDispatch<AppDispatch>()
 
   const user = JSON.parse(localStorage.getItem('user') as string)
   console.log(user)
 
-  const dispatchLogOut = dispatch(logOut(auth))
+  // const dispatchLogOut = dispatch(logOut(auth))
 
   const handleLogOut = () => {
     if (confirm('Do you want to log out?')) {
