@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
+.logIn-container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+
+  height: 100vh;
+
+  .errorContainer {
+    width: 55%;
+    max-height: 150px;
+    margin: auto;
+    background-color: rgb(255, 0, 0, 0.4);
+  }
+}
+
+.logIn-field {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.googleButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-color: #fff;
+
+  border: none;
+
+  color: white; // Icon color
+
+  cursor: pointer; // Pointer cursor on hover
+
+  transition: background-color 0.3s; // Smooth transition for hover effect
+
+  &:hover {
+    background-color: #000;
+  }
+
+  &:focus {
+    outline: none; // Remove outline on focus
+  }
+  svg {
+    font-size: 24px; // Icon size
+  }
+}
