@@ -16,7 +16,7 @@ const isErrorCodes = process.env.NEXT_PUBLIC_ERROR_CODES
 
 const initialState = {
   value: {
-    user: localStorage.getItem('user'),
+    user: localStorage?.getItem('user'),
     errorCodes: isErrorCodes,
   } as LogInType,
 } as InitialState

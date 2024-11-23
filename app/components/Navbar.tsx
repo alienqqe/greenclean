@@ -8,7 +8,7 @@ const Navbar = () => {
   // const state = useAppSelector((state) => state.logIn)
   // const dispatch = useDispatch<AppDispatch>()
 
-  const user = JSON.parse(localStorage.getItem('user') as string)
+  const user = JSON.parse(localStorage?.getItem('user') as string)
   console.log(user)
 
   // const dispatchLogOut = dispatch(logOut(auth))
@@ -17,9 +17,9 @@ const Navbar = () => {
     if (confirm('Do you want to log out?')) {
       signOut(auth)
         .then(() => {
-          localStorage.removeItem('user')
+          localStorage?.removeItem('user')
           alert('Sigh out succesful')
-          window.location.reload()
+          window?.location.reload()
         })
         .catch((error) => {
           console.log(error)

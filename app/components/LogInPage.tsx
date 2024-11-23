@@ -30,7 +30,7 @@ const LogInPage = () => {
   const router = useRouter()
 
   useEffect(() => {
-    localStorage.setItem('user', JSON.stringify(user))
+    localStorage?.setItem('user', JSON.stringify(user))
   }, [user])
 
   const googleLogIn = async () => {
