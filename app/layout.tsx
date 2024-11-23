@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import localFont from 'next/font/local'
 import AddBootstrap from './AddBootstrap'
-import './globals.scss'
+import './styles/globals.scss'
 import { ReduxProvider } from './redux/provider'
 
 const geistSans = localFont({

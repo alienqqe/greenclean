@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import './logIn.scss'
+import '../styles/logIn.scss'
 import { auth } from '../firebase'
 import {
   signInWithPopup,
